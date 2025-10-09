@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { useState } from 'react'
 import { motion } from "motion/react"
+import Head from 'next/head'
 
 const About = ({isDarkMode}) => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -12,6 +13,9 @@ const About = ({isDarkMode}) => {
     whileInView={{opacity: 1}}
     transition={{duration: 1}}
     >
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <motion.h2 
       initial={{opacity: 0, y: -20}}
       whileInView={{opacity: 1, y: 0}}
