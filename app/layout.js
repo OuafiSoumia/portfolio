@@ -10,7 +10,7 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Portfolio - OS",
+  title: "OS - Ouafi Soumia",
   description: "",
 };
 
