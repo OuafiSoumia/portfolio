@@ -43,19 +43,19 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo' 
-                style={{ marginBottom: '16px' }}
-                >I’m Soumia, a Full-Stack Developer who enjoys building applications that solve real problems. With experience in React, Node.js, Spring Boot, and Symfony, I have contributed to projects in healthcare, finance, and immersive technologies. I’m motivated by continuous learning and the challenge of creating efficient, intuitive, and impactful digital solutions. Outside of work, I’m engaged in community initiatives and event organization, connecting people and ideas.
+                    style={{ marginBottom: '16px' }}
+                    >I’m Soumia, a Full-Stack Developer who enjoys building applications that solve real problems. With experience in React, Node.js, Spring Boot, and Symfony, I have contributed to projects in healthcare, finance, and immersive technologies. I’m motivated by continuous learning and the challenge of creating efficient, intuitive, and impactful digital solutions.
                 </p>
-
                 <motion.ul
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration: 0.8, delay: 1}}
+                style={{maxWidth: 'none'}}
                 className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                     {infoList.map(({icon, iconDark, title, description}, index)=>(
                         <motion.li 
                         whileHover={{scale: 1.05}}
-                        className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'
+                        className='border-[0.5px] border-gray-400 rounded-xl p-4 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'
                          key={index}>
                             <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3'/>
                             <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>

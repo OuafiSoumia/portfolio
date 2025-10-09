@@ -141,7 +141,7 @@ export const serviceData = [
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Next Js, Node Js, Symfony, Spring boot, SQL, NoSQL' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Software Engineer with a State Engineering Degree and a Master’s in Software Engineering' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Worked on diverse projects across different domains with multinational companies from Morocco, Canada, Belgium, and France.' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Worked on diverse projects across different domains with multinational companies from Canada, Belgium, and France.' }
 ];
 
 export const toolsData = [

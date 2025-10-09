@@ -73,7 +73,7 @@ const Contact = () => {
         onSubmit={sendEmail} 
         className='max-w-2xl mx-auto'
       >
-        <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
+        <div className='grid grid-cols-auto gap-6 mt-4 mb-4'>
           <motion.input
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -102,7 +102,7 @@ const Contact = () => {
           name='message'
         ></motion.textarea>
       <motion.div
-          className ='grid grid-cols-auto gap-6 mt-10 mb-8'
+          className ='grid grid-cols-auto gap-6'
       >
         <motion.button
           whileHover={{ scale: 1.05 }} 
