@@ -8,10 +8,10 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
     const sideMenuRef = useRef();
 
     const openMenu = ()=>{
-        sideMenuRef.current.style.transform = 'translateX(-16rem)'
+        sideMenuRef.current.style.transform = 'translateX(-256px)'
     }
     const closeMenu = ()=>{
-        sideMenuRef.current.style.transform = 'translateX(16rem)'
+        sideMenuRef.current.style.transform = 'translateX(256px)'
     }
 
     useEffect(()=>{

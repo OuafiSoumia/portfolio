@@ -24,7 +24,7 @@ const About = ({isDarkMode}) => {
         whileInView={{opacity: 1}}
         transition={{duration: 0.8}}
         className='flex w-full flex-col lg:flex-row items-center gap-20 my-10'
-        style={{marginTop: '1.5rem'}}
+        style={{marginTop: '24px'}}
         >
             <motion.div
             initial={{opacity: 0, scale: 0.9}}
@@ -39,7 +39,7 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo' 
-                style={{ marginBottom: '1rem' }}
+                style={{ marginBottom: '16px' }}
                 >I’m Soumia, a Full-Stack Developer who enjoys building applications that solve real problems. With experience in React, Node.js, Spring Boot, and Symfony, I have contributed to projects in healthcare, finance, and immersive technologies. I’m motivated by continuous learning and the challenge of creating efficient, intuitive, and impactful digital solutions. Outside of work, I’m engaged in community initiatives and event organization, connecting people and ideas.
                 </p>
 
