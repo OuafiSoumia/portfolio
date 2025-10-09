@@ -101,7 +101,9 @@ const Contact = () => {
           className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90'
           name='message'
         ></motion.textarea>
-
+      <motion.div
+          className ='grid grid-cols-auto gap-6 mt-10 mb-8'
+      >
         <motion.button
           whileHover={{ scale: 1.05 }} 
           transition={{ duration: 0.3 }}
@@ -110,6 +112,20 @@ const Contact = () => {
         >
           Submit now <Image src={assets.right_arrow_white} alt='' className='w-4'/>
         </motion.button>
+        <motion.a
+          href="https://calendly.com/soumia-ouafi11/availability"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="px-8 rounded-full py-3  gap-2 bg-black/80 bg-blue-600 text-white font-semibold  
+                    shadow-md hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 
+                    transition-colors duration-200 mx-auto"
+        >
+        📅 Book a Call
+      </motion.a>
+      </motion.div>
+       
 
         <p className='mt-4'>{result}</p>
       </motion.form>

@@ -23,7 +23,7 @@ const Services = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.5 }}
       className='text-center text-5xl font-Ovo'>
-      My Services</motion.h2>
+      Skills </motion.h2>
 
       <motion.p 
       initial={{ opacity: 0 }}

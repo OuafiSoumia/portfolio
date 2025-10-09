@@ -1,9 +1,11 @@
 import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import { useState } from 'react'
 import { motion } from "motion/react"
 
 const About = ({isDarkMode}) => {
+    const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
     <motion.div id='about' className='w-full px-[13%] py-10 scroll-mt-28'
     initial={{opacity: 0}}
@@ -72,9 +74,24 @@ const About = ({isDarkMode}) => {
                     {toolsData.map((tool, index)=>(
                         <motion.li 
                         whileHover={{ scale: 1.1 }}
+                        onHoverStart={() => setHoveredIndex(index)}
+                        onHoverEnd={() => setHoveredIndex(null)}
                         className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'
-                         key={index}>
-                            <Image src={tool} alt='Tool' className='w-5 sm:w-7'/>
+                        key={index}>
+                            <Image src={tool.img} alt='Tool' className='w-5 sm:w-7'/>
+                            <motion.span
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{
+                                opacity: hoveredIndex === index ? 1 : 0,
+                                y: hoveredIndex === index ? -40 : 10, 
+                                }}
+                                transition={{ duration: 0.25 }}
+                                className="absolute text-sm font-medium px-2 py-1 rounded-md 
+                                        bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-100 
+                                        shadow-md pointer-events-none"
+                            >
+                                {tool.name}
+                            </motion.span>
                         </motion.li>
                     ))}
                 </motion.ul>
