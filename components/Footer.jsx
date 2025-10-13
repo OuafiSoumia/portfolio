@@ -1,3 +1,8 @@
+console.log("Début");
+setTimeout(() => console.log("Timer"), 1000);
+console.log("Fin");
+
+
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
